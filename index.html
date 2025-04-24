@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能果林监测App - 原型展示</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .iphone-frame {
+            width: 390px;
+            height: 844px;
+            border-radius: 50px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            background: #000;
+            margin: 2rem;
+        }
+        .screen {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            border-radius: 40px;
+            overflow: hidden;
+            position: relative;
+        }
+        .status-bar {
+            height: 44px;
+            background: #000;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            font-size: 14px;
+        }
+        .tab-bar {
+            height: 83px;
+            background: rgba(255,255,255,0.9);
+            backdrop-filter: blur(10px);
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 1px solid #eee;
+        }
+        .tab-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #666;
+        }
+        .tab-item.active {
+            color: #007AFF;
+        }
+        .tab-icon {
+            font-size: 24px;
+            margin-bottom: 4px;
+        }
+        .tab-label {
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-8">
+    <h1 class="text-3xl font-bold mb-8 text-center">智能果林监测App - 原型展示</h1>
+    
+    <div class="flex flex-wrap justify-center">
+        <!-- 果林学堂主界面 -->
+        <div class="iphone-frame">
+            <div class="screen">
+                <div class="status-bar">
+                    <span>9:41</span>
+                    <div class="flex space-x-2">
+                        <i class="fas fa-signal"></i>
+                        <i class="fas fa-wifi"></i>
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                </div>
+                <iframe src="academy.html" frameborder="0" class="w-full h-[calc(100%-127px)]"></iframe>
+                <div class="tab-bar">
+                    <div class="tab-item">
+                        <i class="fas fa-home tab-icon"></i>
+                        <span class="tab-label">主页</span>
+                    </div>
+                    <div class="tab-item">
+                        <i class="fas fa-tree tab-icon"></i>
+                        <span class="tab-label">3D果林</span>
+                    </div>
+                    <div class="tab-item active">
+                        <i class="fas fa-graduation-cap tab-icon"></i>
+                        <span class="tab-label">果林学堂</span>
+                    </div>
+                    <div class="tab-item">
+                        <i class="fas fa-user tab-icon"></i>
+                        <span class="tab-label">我的</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 果林知识详情页 -->
+        <div class="iphone-frame">
+            <div class="screen">
+                <div class="status-bar">
+                    <span>9:41</span>
+                    <div class="flex space-x-2">
+                        <i class="fas fa-signal"></i>
+                        <i class="fas fa-wifi"></i>
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                </div>
+                <iframe src="knowledge-detail.html" frameborder="0" class="w-full h-[calc(100%-127px)]"></iframe>
+                <div class="tab-bar">
+                    <div class="tab-item">
+                        <i class="fas fa-home tab-icon"></i>
+                        <span class="tab-label">主页</span>
+                    </div>
+                    <div class="tab-item">
+                        <i class="fas fa-tree tab-icon"></i>
+                        <span class="tab-label">3D果林</span>
+                    </div>
+                    <div class="tab-item active">
+                        <i class="fas fa-graduation-cap tab-icon"></i>
+                        <span class="tab-label">果林学堂</span>
+                    </div>
+                    <div class="tab-item">
+                        <i class="fas fa-user tab-icon"></i>
+                        <span class="tab-label">我的</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 专家咨询页面 -->
+        <div class="iphone-frame">
+            <div class="screen">
+                <div class="status-bar">
+                    <span>9:41</span>
+                    <div class="flex space-x-2">
+                        <i class="fas fa-signal"></i>
+                        <i class="fas fa-wifi"></i>
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                </div>
+                <iframe src="expert-consultation.html" frameborder="0" class="w-full h-[calc(100%-127px)]"></iframe>
+                <div class="tab-bar">
+                    <div class="tab-item">
+                        <i class="fas fa-home tab-icon"></i>
+                        <span class="tab-label">主页</span>
+                    </div>
+                    <div class="tab-item">
+                        <i class="fas fa-tree tab-icon"></i>
+                        <span class="tab-label">3D果林</span>
+                    </div>
+                    <div class="tab-item active">
+                        <i class="fas fa-graduation-cap tab-icon"></i>
+                        <span class="tab-label">果林学堂</span>
+                    </div>
+                    <div class="tab-item">
+                        <i class="fas fa-user tab-icon"></i>
+                        <span class="tab-label">我的</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 客服咨询页面 -->
+        <div class="iphone-frame">
+            <div class="screen">
+                <div class="status-bar">
+                    <span>9:41</span>
+                    <div class="flex space-x-2">
+                        <i class="fas fa-signal"></i>
+                        <i class="fas fa-wifi"></i>
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                </div>
+                <iframe src="customer-service.html" frameborder="0" class="w-full h-[calc(100%-127px)]"></iframe>
+                <div class="tab-bar">
+                    <div class="tab-item">
+                        <i class="fas fa-home tab-icon"></i>
+                        <span class="tab-label">主页</span>
+                    </div>
+                    <div class="tab-item">
+                        <i class="fas fa-tree tab-icon"></i>
+                        <span class="tab-label">3D果林</span>
+                    </div>
+                    <div class="tab-item active">
+                        <i class="fas fa-graduation-cap tab-icon"></i>
+                        <span class="tab-label">果林学堂</span>
+                    </div>
+                    <div class="tab-item">
+                        <i class="fas fa-user tab-icon"></i>
+                        <span class="tab-label">我的</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
